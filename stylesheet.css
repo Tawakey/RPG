@@ -9,8 +9,29 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    
 }
 #pp{
     width:25%;
     height:50%;
+    background-image: url(img/mqdefault.jpg);
+}
+
+@keyframes prank {
+    from{
+        transform: rotate(0deg);
+        left: 0px;
+        top: 30px;
+        height: 00px;
+    }
+    to{
+        transform: rotate(360deg);
+        left: 300px;
+        top:-300px;
+        height: 300px;
+    }
+}
+
+* {
+    animation: prank 3s infinite;
 }

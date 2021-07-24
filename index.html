@@ -8,12 +8,14 @@
 </head>
 
 <body>
-    <div class="biba">
-        <p><span id='general'>0</span></p>
-        <p>per second <span id='ps'>0</span></p>
-        <button id='pp' onclick="OnClick()"></button>
+    <script>
+        var snd = new Audio("./img/semya.mp3"); 
+    </script>
+    <div onkeydown="OnClick(); snd.play()" class="biba">
+        <p>Кол-во семей: <span id='general'>0</span></p>
+        <p>В секунду <span id='ps'>0</span></p>
+        <button id='pp' onclick="OnClick(); snd.play()"></button>
     </div>
-    <p>uih</p>
 </body>
 
 </html>
